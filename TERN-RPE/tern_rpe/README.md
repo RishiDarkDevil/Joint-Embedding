@@ -29,59 +29,21 @@ For each sample, visual and text features are pre-extracted as numpy files
 - Installation
 ```
 pip install -r requirements.txt
-apt install libomp-dev
-pip install faiss-gpu
 ```
 
-- Specify dataset paths and configuration in the [config file](./tools/configs/yaml/tern.yaml)
-
-- For training
-```
-PYTHONPATH=. python tools/train.py 
-```
-
-- For evaluation
-```
-PYTHONPATH=. python tools/eval.py \
-                --top_k= <top k similarity> \
-                --weight= <model checkpoint> \
-```
-
-- For inference
-  - See [tools/inference.py](tools/inference.py) script
-
+- Specify dataset paths and model configuration in the [config file](./tools/configs/yaml/tern.yaml)
+- See the notebooks below for training, evaluation and inference.
 
 ## Notebooks
-- [![Notebook](https://colab.research.google.com/assets/colab-badge.svg)](./assets/notebooks/TERN.ipynb) Inference TERN on Flickr30k dataset
-- [![Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1xC4mVc_bp0t4-7T4xVum3AECFCalsgsv?usp=sharing) Use FasterRCNN to extract Bottom Up embeddings 
-- [![Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/10dRDQkuZ3KZQ_4bwMbevZoiWzP_OVbVJ?usp=sharing) Use BERT to extract text embeddings 
+- For training
+Refer to this [train model notebook](https://github.com/RishiDarkDevil/Joint-Embedding/blob/main/TERN-RPE/TERN-RPE-Train.ipynb)
+
+- For evaluation
+
+- For inference
+Similar to the non-RPE version [here](https://github.com/RishiDarkDevil/Joint-Embedding/blob/main/TERN-RPE/TERN-Non-RPE-Inference.ipynb)
 
 ## Results
-
-- Validation m on Flickr30k dataset (trained for 100 epochs):
-
-Model | Weights | i2t/R@10 | t2i/R@10
---- | --- | --- | ---
-TERN | [link](https://drive.google.com/uc?id=1ebQMcKCioE74MJXs8jpoL4WVvCFcb2RI) | 0.5174 | 0.7496
-
-- Some visualization
-
-|**Query text: Two dogs are running along the street**|
-|:-------------------------:|
-|<img width="1000" alt="screen" src="assets/results/1.png">|
-
-|**Query text**: The woman is holding a violin|
-|:-------------------------:|
-|<img width="1000" alt="screen" src="assets/results/2.png">|
-
-|**Query text**: Young boys are playing baseball|
-|:-------------------------:|
-|<img width="1000" alt="screen" src="assets/results/3.png">|
-
-
-|**Query text**: A man is standing, looking at a lake|
-|:-------------------------:|
-|<img width="1000" alt="screen" src="assets/results/4.png">|
 
 
 ## Paper References
