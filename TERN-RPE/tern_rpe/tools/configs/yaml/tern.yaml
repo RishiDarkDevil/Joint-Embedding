@@ -9,7 +9,7 @@ settings:
       feat_dir: "/Users/rishideychowdhury/Desktop/Joint-Embedding/Data/bottom_up"
       text_dir: "/Users/rishideychowdhury/Desktop/Joint-Embedding/Data/bert_features"
       batch_size: 128
-      num_workers: 2 # PREVIOUSLY num_workers was not there here
+      num_workers: 2
 
   valloader:
     name: RawNumpyFeatureLoader
@@ -19,7 +19,7 @@ settings:
       feat_dir: "/Users/rishideychowdhury/Desktop/Joint-Embedding/Data/bottom_up"
       text_dir: "/Users/rishideychowdhury/Desktop/Joint-Embedding/Data/bert_features"
       batch_size: 128
-      num_workers: 2 # PREVIOUSLY 2
+      num_workers: 2
 
   ## Those dataset for metric evaluation
   valset1:
@@ -58,7 +58,7 @@ settings:
 
 
   loss:
-    name: "contrastive"                # [contrastive, nxtent, custom_nxtent, triplet]
+    name: "contrastive_tern"                # [contrastive, contrastive_tern, nxtent, custom_nxtent, triplet] # PREVIOUSLY "contrastive"
     # distance: 
     #   name: "cosine"                   # [cosine, dot, euclidean]      
     # reducer:

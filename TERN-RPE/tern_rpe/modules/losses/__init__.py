@@ -1,6 +1,7 @@
 import torch
 from .nt_xent import NTXentLoss, CustomNTXentLoss
 from .contrastive import ContrastiveLoss
+from .contrastive_tern import ContrastiveLoss1
 from .triplet import TripletLoss
 
 from pytorch_metric_learning.distances import CosineSimilarity, DotProductSimilarity, LpDistance
@@ -63,6 +64,9 @@ def get_loss_fn(config):
 
     if config['name'] == 'contrastive':
         loss_fn = ContrastiveLoss
+
+    if config['name'] == 'contrastive_tern':
+        loss_fn = ContrastiveLoss1
 
     if loss_fn is None:
         raise ValueError("Loss function not exists")
