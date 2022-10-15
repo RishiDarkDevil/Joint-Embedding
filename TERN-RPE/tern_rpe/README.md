@@ -9,7 +9,7 @@ This project reimplements the idea from "Transformer Reasoning Network for Image
 The figure below shows the overview of the architecture
 
 <p align="center">
-<img width="1000" alt="screen" src="assets/architecture/architecture.png">
+<img width="1000" alt="screen" src="assets/architecture/architecture-rpe.png">
 </p>
 
 ## Datasets
