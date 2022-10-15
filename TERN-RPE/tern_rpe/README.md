@@ -1,7 +1,8 @@
-# Cross-modal Retrieval using Transformer Encoder Reasoning Networks
+# Cross-modal Retrieval using Transformer Encoder Reasoning Networks & Relative Positional Encoding
 
-This project reimplements the idea from "Transformer Reasoning Network for Image-Text Matching and Retrieval". To solve the task of cross-modal retrieval, representative features from both modal are extracted using distinctive pipeline and then projected into the same embedding space. Because the features are sequence of vectors, Transformer-based model can be utilised to work best. In this repo, my highlight contribution is:
+This project reimplements the idea from "Transformer Reasoning Network for Image-Text Matching and Retrieval" along with that from "Self-Attention with Relative Position Representations". To solve the task of cross-modal retrieval, representative features from both modal are extracted using distinctive pipeline and then projected into the same embedding space. Because the features are sequence of vectors, Transformer-based model can be utilised to work best. In this repo, my highlight contribution is:
   - Reimplement TERN module, which exploits the effectiveness of using Transformer on bottom-up attention features and bert features.
+  - Implement Relative Positional Encoding on both textual and image side.
   - Take advantage of facebookresearch's [FAISS](https://github.com/facebookresearch/faiss) for efficient similarity search and clustering of dense vectors.
   - Experiment various metric learning loss objectives from KevinMusgrave's [Pytorch Metric Learning](https://github.com/KevinMusgrave/pytorch-metric-learning)
   
