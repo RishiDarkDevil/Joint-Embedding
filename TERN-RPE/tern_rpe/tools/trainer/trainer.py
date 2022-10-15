@@ -224,7 +224,7 @@ class Trainer():
         """
         Retrieve relevant images with a text query
         """
-        from utils.utils import draw_retrieval_results
+        from ..utils.utils import draw_retrieval_results
         import random
 
         # Retrieval dict {post_id: {'post_ids': [], 'scores': []}
@@ -253,7 +253,7 @@ class Trainer():
         """
         Retrieve relevant texts with an image query
         """
-        from utils.utils import draw_image_caption
+        from ..utils.utils import draw_image_caption
         import cv2
 
         # Retrieval dict {post_id: {'post_ids': [], 'scores': []}

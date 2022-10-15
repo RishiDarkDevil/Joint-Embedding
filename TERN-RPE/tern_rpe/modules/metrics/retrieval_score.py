@@ -74,7 +74,7 @@ class RetrievalScore():
         self.metric_names = metric_names
         self.image_loader = data.DataLoader(
             image_set,
-            batch_size=16, # PREVIOUSLY SET TO 256
+            batch_size=128, # PREVIOUSLY SET TO 256
             shuffle = False, 
             collate_fn=image_set.collate_fn, 
             num_workers= 2, # PREVIOUSLY 2
@@ -83,7 +83,7 @@ class RetrievalScore():
 
         self.text_loader = data.DataLoader(
             text_set,
-            batch_size=16, # PREVIOUSLY SET TO 256
+            batch_size=128, # PREVIOUSLY SET TO 256
             shuffle = False, 
             collate_fn=text_set.collate_fn, 
             num_workers= 2, # PREVIOUSLY 2
@@ -197,10 +197,10 @@ class RetrievalScore():
             )
 
             current_id = queries_ids[idx] # query id
-            target_ids = targets_ids[idx] # target id
+            target_ids = targets_ids[idx] if not isinstance(targets_ids[idx], np.int64) else np.array([targets_ids[idx]]) # target id 
 
             pred_ids = gallery_ids[top_k_indexes] # gallery id
-            pred_ids = pred_ids.tolist()
+            pred_ids = pred_ids.tolist() if not isinstance(pred_ids.tolist(), int) else [pred_ids.tolist()]
 
             if self.save_results:
                 self.results_dict[current_id] = {
