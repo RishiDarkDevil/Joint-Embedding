@@ -58,7 +58,7 @@ settings:
 
 
   loss:
-    name: "contrastive_tern"                # [contrastive, contrastive_tern, nxtent, custom_nxtent, triplet] # PREVIOUSLY "contrastive"
+    name: "contrastive"                # [contrastive, contrastive_tern, nxtent, custom_nxtent, triplet]
     # distance: 
     #   name: "cosine"                   # [cosine, dot, euclidean]      
     # reducer:
