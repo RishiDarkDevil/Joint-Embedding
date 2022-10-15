@@ -1,0 +1,8 @@
+albumentations==0.5.2
+pyyaml>=5.1
+tensorboard
+tqdm
+pycocotools
+gdown==3.13.0
+transformers
+pytorch-metric-learning
