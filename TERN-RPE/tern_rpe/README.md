@@ -35,16 +35,12 @@ pip install -r requirements.txt
 - See the notebooks below for training, evaluation and inference.
 
 ## Notebooks
-- For training
-Refer to this [train model notebook](https://github.com/RishiDarkDevil/Joint-Embedding/blob/main/TERN-RPE/TERN-RPE-Train.ipynb)
-
-- For evaluation
-
-- For inference
-Similar to the non-RPE version [here](https://github.com/RishiDarkDevil/Joint-Embedding/blob/main/TERN-RPE/TERN-Non-RPE-Inference.ipynb)
+- For training refer to this [train model notebook](https://github.com/RishiDarkDevil/Joint-Embedding/blob/main/TERN-RPE/TERN-RPE-Train.ipynb)
+- For evaluation and training with walkthrough of the entire code with explanation check out [TERN Joint Embedding Notebook](https://github.com/RishiDarkDevil/Joint-Embedding/blob/main/TERN-RPE/TERN-Joint-Embedding-Tinker.ipynb)
+- For inference similar to the non-RPE version [here](https://github.com/RishiDarkDevil/Joint-Embedding/blob/main/TERN-RPE/TERN-Non-RPE-Inference.ipynb)
 
 ## Results
-
+- To be updated...
 
 ## Paper References
 
