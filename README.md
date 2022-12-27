@@ -27,12 +27,8 @@ For each sample, visual and text features are pre-extracted as numpy files
 ## Execution
 
 - Installation
-I used M1 Max to conduct the experiments, if you have CUDA available you can optimize the training further through NVIDEA mixed precision training, APEX, etc.
-```
-pip install -r requirements.txt
-```
 
-- Specify dataset paths and model configuration in the [config file](./tools/configs/yaml/tern.yaml)
+I used M1 Max to conduct the experiments, if you have CUDA available you can optimize the training further through NVIDEA mixed precision training, APEX, etc.
 - See the notebooks below for training, evaluation and inference.
 
 ## Notebooks
