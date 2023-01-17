@@ -1,5 +1,7 @@
 # Cross-modal Retrieval using Transformer Encoder Reasoning Networks & Relative Positional Encoding
 
+Currently the major work for generating joint embedding goes in creating large synthetic dataset using Stable Diffusion leveraging multimodal information like captions using Attentive Heatmaps. Visit [Text-Based Object Discovery](https://github.com/RishiDarkDevil/Text-Based-Object-Discovery) for latest updates.
+
 This project reimplements the idea from "Transformer Reasoning Network for Image-Text Matching and Retrieval" along with that from "Self-Attention with Relative Position Representations". To solve the task of cross-modal retrieval, representative features from both modal are extracted using distinctive pipeline and then projected into the same embedding space. Because the features are sequence of vectors, Transformer-based model can be utilised to work best. In this repo, my highlight contribution is:
   - Reimplement TERN module, which exploits the effectiveness of using Transformer on bottom-up attention features and bert features.
   - Implement Relative Positional Encoding on both textual and image side.
